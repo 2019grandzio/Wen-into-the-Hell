@@ -57,10 +57,10 @@
      <Compile Include="Assets\GameMain\Scripts\Editor\ProjectBuildEventHandler.cs" />
      <Compile Include="Assets\GameMain\Scripts\Editor\ProjectSaver.cs" />
  <Reference Include="UnityEditor.StandardEvents">
- <HintPath>C:/Users/ass14/Downloads/UGFGameDevelopTemplate-master/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
+ <HintPath>C:/Users/ass14/Downloads/Wen_into_the_Hell/UGFGameDevelopTemplate-master/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
  </Reference>
  <Reference Include="Unity.PackageManagerUI.Editor">
- <HintPath>C:/Users/ass14/Downloads/UGFGameDevelopTemplate-master/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
+ <HintPath>C:/Users/ass14/Downloads/Wen_into_the_Hell/UGFGameDevelopTemplate-master/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.AIModule">
  <HintPath>C:/Program Files/Unity/Hub/Editor/2018.1.0f2/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
@@ -303,16 +303,16 @@
  <HintPath>C:/Program Files/Unity/Hub/Editor/2018.1.0f2/Editor/Data/PlaybackEngines/windowsstandalonesupport/UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
  </Reference>
  <Reference Include="GameFramework">
- <HintPath>C:/Users/ass14/Downloads/UGFGameDevelopTemplate-master/Assets/GameFramework/Libraries/GameFramework.dll</HintPath>
+ <HintPath>C:/Users/ass14/Downloads/Wen_into_the_Hell/UGFGameDevelopTemplate-master/Assets/GameFramework/Libraries/GameFramework.dll</HintPath>
  </Reference>
  <Reference Include="ICSharpCode.SharpZipLib">
- <HintPath>C:/Users/ass14/Downloads/UGFGameDevelopTemplate-master/Assets/GameFramework/Libraries/ICSharpCode.SharpZipLib.dll</HintPath>
+ <HintPath>C:/Users/ass14/Downloads/Wen_into_the_Hell/UGFGameDevelopTemplate-master/Assets/GameFramework/Libraries/ICSharpCode.SharpZipLib.dll</HintPath>
  </Reference>
  <Reference Include="LitJson">
- <HintPath>C:/Users/ass14/Downloads/UGFGameDevelopTemplate-master/Assets/GameMain/Libraries/LitJson.dll</HintPath>
+ <HintPath>C:/Users/ass14/Downloads/Wen_into_the_Hell/UGFGameDevelopTemplate-master/Assets/GameMain/Libraries/LitJson.dll</HintPath>
  </Reference>
  <Reference Include="protobuf-net">
- <HintPath>C:/Users/ass14/Downloads/UGFGameDevelopTemplate-master/Assets/GameMain/Libraries/protobuf-net.dll</HintPath>
+ <HintPath>C:/Users/ass14/Downloads/Wen_into_the_Hell/UGFGameDevelopTemplate-master/Assets/GameMain/Libraries/protobuf-net.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.Advertisements">
  <HintPath>C:/Users/ass14/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.ads@2.0.7/Editor/UnityEditor.Advertisements.dll</HintPath>
