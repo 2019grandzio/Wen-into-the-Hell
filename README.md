@@ -1,5 +1,4 @@
-# Wen-into-the-Hell
-# 游戏名：文——坠入地狱
+# 游戏名：文—坠入地狱/Wen-into-the-Hell
 # 本项目基于
 https://blog.csdn.net/qq_32821435/category_7753219.html 教程制作
 # 日志：
