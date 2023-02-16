@@ -23,13 +23,13 @@ namespace Hamood
             int score = GameEntry.DataNode.GetNode("Score").GetData<VarInt>();
             Score.text = "你的总分：" + score;
         }
- 
+        // 分数肯定要清零啊
         protected override void OnClose(object userData)
         {
             base.OnClose(userData);
             Score.text = string.Empty;
         }
- 
+        // 点击后重新开始游戏
         public void OnRestartButtonClick()
         {
             Close(true);

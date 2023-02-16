@@ -37,6 +37,7 @@ namespace Hamood
         protected override void OnUpdate(float elapseSeconds, float realElapseSeconds)
         {
             base.OnUpdate(elapseSeconds, realElapseSeconds);
+            // 随时间来加分
             m_ScoreTimer += elapseSeconds;
             if (m_ScoreTimer >= 2f)
             {
@@ -68,7 +69,8 @@ namespace Hamood
         private void OnAddScore(object sender, GameEventArgs e)
         {
             AddScoreEventArgs ase = (AddScoreEventArgs)e;
- 
+            // 订阅了子弹撞击后加分的事件
+            // 对分数参数进行修改同时将显示内容修改
             m_Score += ase.AddCount;
             scoreText.text = "总分：" + m_Score;
         }

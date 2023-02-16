@@ -31,10 +31,10 @@ namespace Hamood
         protected override void OnUpdate(float elapseSeconds, float realElapseSeconds)
         {
             base.OnUpdate(elapseSeconds, realElapseSeconds);
- 
+            
             CachedTransform.Translate(Vector2.right * m_BulletData.FlySpeed * elapseSeconds, Space.World);
  
-            //已达到最大飞行距离
+            //子弹已达到最大飞行距离
             if (CachedTransform.position.x >= 9.1f)
             {
                 GameEntry.Entity.HideEntity(this);
@@ -48,7 +48,8 @@ namespace Hamood
         }
         private void OnBirdDead(object sender, GameEventArgs e)
         {
-            //小鸟死亡后立即隐藏自身
+            //小鸟死亡后立即隐藏自身（由于事件已经订阅，当事件被派发时会执行此语句）
+            //也就是让鸟消失时子弹也消失
             GameEntry.Entity.HideEntity(this);
         }
 

@@ -80,6 +80,7 @@ namespace Hamood
         }
         private void OnReturnMenu(object sender, GameEventArgs e)
         {
+            // 就是说当你点击返回主菜单按钮时他就被执行了
             m_IsReturnMenu = true;
         }
 

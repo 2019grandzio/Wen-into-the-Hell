@@ -41,7 +41,7 @@ namespace Hamood
             //设置上下管道的偏移（数据来源于PipeData的随机生成）
             m_UpPipe.SetLocalPositionY(m_PipeData.OffsetUp);
             m_DownPipe.SetPositionY(m_PipeData.OffsetDown);
-            //订阅事件
+            //订阅重新生成事件
             GameEntry.Event.Subscribe(RestartEventArgs.EventId, OnRestart);
            
             
@@ -69,11 +69,12 @@ namespace Hamood
             /*(这两个逼是多余的操作)
             m_UpPipe.gameObject.SetActive(false);
             m_DownPipe.gameObject.SetActive(false);*/
-            //取消订阅事件
+            //取消订阅重新生成事件
             GameEntry.Event.Unsubscribe(RestartEventArgs.EventId, OnRestart);
         }
         private void OnRestart(object sender, GameEventArgs e)
         {
+            // 重新生成时将之前的管道全部隐藏
             GameEntry.Entity.HideEntity(this);
         }
     }
