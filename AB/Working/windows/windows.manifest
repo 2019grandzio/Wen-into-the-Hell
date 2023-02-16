@@ -1,0 +1,32 @@
+ManifestFileVersion: 0
+CRC: 518583337
+AssetBundleManifest:
+  AssetBundleInfos:
+    Info_0:
+      Name: configs
+      Dependencies: {}
+    Info_1:
+      Name: datatables
+      Dependencies: {}
+    Info_2:
+      Name: entites
+      Dependencies:
+        Dependency_0: textures
+    Info_3:
+      Name: music
+      Dependencies: {}
+    Info_4:
+      Name: secenes
+      Dependencies: {}
+    Info_5:
+      Name: sounds
+      Dependencies: {}
+    Info_6:
+      Name: textures
+      Dependencies: {}
+    Info_7:
+      Name: uiforms
+      Dependencies: {}
+    Info_8:
+      Name: uisounds
+      Dependencies: {}

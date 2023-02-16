@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<UnityGameFramework>
+  <AssetBundleCollection>
+    <AssetBundles>
+      <AssetBundle Name="Configs" LoadType="0" Packed="False" />
+      <AssetBundle Name="DataTables" LoadType="0" Packed="False" />
+      <AssetBundle Name="Entites" LoadType="0" Packed="False" />
+      <AssetBundle Name="Music" LoadType="0" Packed="False" />
+      <AssetBundle Name="Secenes" LoadType="0" Packed="False" />
+      <AssetBundle Name="Sounds" LoadType="0" Packed="False" />
+      <AssetBundle Name="Textures" LoadType="0" Packed="False" />
+      <AssetBundle Name="UIForms" LoadType="0" Packed="False" />
+      <AssetBundle Name="UISounds" LoadType="0" Packed="False" />
+    </AssetBundles>
+    <Assets>
+      <Asset Guid="0687047c889b4254cb71928a61a5cb5c" AssetBundleName="Entites" />
+      <Asset Guid="0b867231d8438d44a99a939f293b4a3c" AssetBundleName="Textures" />
+      <Asset Guid="103e064cf5c54b84f90a3d9c1b040afd" AssetBundleName="DataTables" />
+      <Asset Guid="125b37c134faa4f42a9edc9df709f078" AssetBundleName="Configs" />
+      <Asset Guid="1f3bcbe74e5536e4280f6f193a6aeb37" AssetBundleName="DataTables" />
+      <Asset Guid="20287869c30106543b9b84333668f397" AssetBundleName="Secenes" />
+      <Asset Guid="276accfe69ce2e241b534c7e0badfb1d" AssetBundleName="DataTables" />
+      <Asset Guid="2e85f6d3610630742b24ac0a1cf4befb" AssetBundleName="Textures" />
+      <Asset Guid="2f81605719260714c899ef87a9e8559e" AssetBundleName="Secenes" />
+      <Asset Guid="40b2ee4d15cfe1b4593a162ec199cb1e" AssetBundleName="Entites" />
+      <Asset Guid="40ed7d14399078f4bbdcf875b76f4b3f" AssetBundleName="Entites" />
+      <Asset Guid="6030f86b0b5805a4abad04a848d840e9" AssetBundleName="Sounds" />
+      <Asset Guid="689cbef480857b24db285ff997607a25" AssetBundleName="UIForms" />
+      <Asset Guid="72a25bac5b240804d856fe49a449d375" AssetBundleName="Configs" />
+      <Asset Guid="72de6f1ec750c294c92f5712abff1cdb" AssetBundleName="Configs" />
+      <Asset Guid="77d15f3595b70ad47b52d24b694ab1d0" AssetBundleName="Sounds" />
+      <Asset Guid="7f6cc2db01a4419469a3d56b7d21f621" AssetBundleName="Configs" />
+      <Asset Guid="7f7e24107f125ee42b722f1231519ad8" AssetBundleName="Entites" />
+      <Asset Guid="85a86fa681556894382c47e5b344bde7" AssetBundleName="Music" />
+      <Asset Guid="871ee8f8345fb03429fa4fea5404452b" AssetBundleName="UISounds" />
+      <Asset Guid="97ff887b6192727499669fd184a2c87a" AssetBundleName="Textures" />
+      <Asset Guid="9942184519e7fca42b1f6e310edf5e2d" AssetBundleName="UIForms" />
+      <Asset Guid="9b9515bf99623db4f907b606d64bb81d" AssetBundleName="Textures" />
+      <Asset Guid="b344eccf7d770f944a2b65fb7328582d" AssetBundleName="Music" />
+      <Asset Guid="c308e09ed9bd6924d81d21cacf2bda75" AssetBundleName="UISounds" />
+      <Asset Guid="c3fb7f8fb5909894bae59d444ea228bc" AssetBundleName="UIForms" />
+      <Asset Guid="c50012f79cd3f8844a45eef7bd66d58d" AssetBundleName="Configs" />
+      <Asset Guid="c725b4063cfcfb244b5f729639e8c8b9" AssetBundleName="Configs" />
+      <Asset Guid="ca735dadf47528e43925b9945d8f348e" AssetBundleName="DataTables" />
+      <Asset Guid="ce310aed4b99ccb458d09397f83b801c" AssetBundleName="DataTables" />
+      <Asset Guid="ce79bce7b4b3cc44597208381e0c077c" AssetBundleName="UIForms" />
+      <Asset Guid="f24bcc41d6ea3a648a5d02f768660b19" AssetBundleName="DataTables" />
+      <Asset Guid="ff6c27ab125246a47b5560d552de8849" AssetBundleName="Sounds" />
+    </Assets>
+  </AssetBundleCollection>
+</UnityGameFramework>

@@ -1,0 +1,21 @@
+ManifestFileVersion: 0
+CRC: 2594763409
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 95710e64ecde152ce0ea7535983d1076
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: b474380d27eb4bc856799e9c585c4864
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+Assets:
+- Assets/GameMain/Textures/zhuzi.png
+- "Assets/GameMain/Textures/\u97ED\u83DC\u76D2\u5B50.png"
+- Assets/GameMain/Textures/diban.png
+- Assets/GameMain/Textures/hen.png
+Dependencies: []
