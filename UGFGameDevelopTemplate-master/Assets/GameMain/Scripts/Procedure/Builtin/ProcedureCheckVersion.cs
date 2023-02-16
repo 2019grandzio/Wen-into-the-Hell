@@ -12,6 +12,7 @@ namespace Hamood
     /// </summary>
     public class ProcedureCheckVersion : ProcedureBase
     {
+        // 加载资源完成参数
         private bool m_ResourceInitComplete = false;
 
 
@@ -20,7 +21,7 @@ namespace Hamood
             base.OnEnter(procedureOwner);
 
             m_ResourceInitComplete = false;
-
+            // 订阅网络，资源事件(事件为内置事件无需派发)
             GameEntry.Event.Subscribe(WebRequestSuccessEventArgs.EventId, OnWebRequestSuccess);
             GameEntry.Event.Subscribe(WebRequestFailureEventArgs.EventId, OnWebRequestFailure);
             GameEntry.Event.Subscribe(ResourceInitCompleteEventArgs.EventId, OnResourceInitComplete);
@@ -32,6 +33,7 @@ namespace Hamood
 
         protected override void OnLeave(ProcedureOwner procedureOwner, bool isShutdown)
         {
+            // 取消订阅网络，资源事件(事件为内置事件无需派发)
             GameEntry.Event.Unsubscribe(WebRequestSuccessEventArgs.EventId, OnWebRequestSuccess);
             GameEntry.Event.Unsubscribe(WebRequestFailureEventArgs.EventId, OnWebRequestFailure);
             GameEntry.Event.Unsubscribe(ResourceInitCompleteEventArgs.EventId, OnResourceInitComplete);
@@ -50,7 +52,7 @@ namespace Hamood
             //资源初始化完成后，进入预加载流程
             ChangeState<ProcedurePreload>(procedureOwner);
         }
-
+        // 版本请求
         private void RequestVersion()
         {
             string deviceId = SystemInfo.deviceUniqueIdentifier;
@@ -107,7 +109,7 @@ namespace Hamood
 
             GameEntry.WebRequest.AddWebRequest(GameEntry.BuiltinData.BuildInfo.CheckVersionUrl, wwwForm, this);
         }
-
+        // 网络请求
         private void OnWebRequestSuccess(object sender, GameEventArgs e)
         {
             WebRequestSuccessEventArgs ne = (WebRequestSuccessEventArgs)e;
@@ -149,7 +151,7 @@ namespace Hamood
 
             GameEntry.Resource.InitResources();
         }
-
+        // 资源加载完成
         private void OnResourceInitComplete(object sender, GameEventArgs e)
         {
             m_ResourceInitComplete = true;

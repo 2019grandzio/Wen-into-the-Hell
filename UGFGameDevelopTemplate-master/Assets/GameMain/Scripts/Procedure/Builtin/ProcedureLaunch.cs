@@ -41,7 +41,7 @@ namespace Hamood
         protected override void OnUpdate(ProcedureOwner procedureOwner, float elapseSeconds, float realElapseSeconds)
         {
             base.OnUpdate(procedureOwner, elapseSeconds, realElapseSeconds);
-
+            // 切换至模式选择流程
             ChangeState<ProcedureSplash>(procedureOwner);
         }
 

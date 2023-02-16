@@ -34,6 +34,7 @@ namespace Hamood
         protected override void OnEnter(ProcedureOwner procedureOwner)
         {
             base.OnEnter(procedureOwner);
+            // 生成显示分数UI
             m_ScoreFormId = GameEntry.UI.OpenUIForm(UIFormId.ScoreForm).Value;
             // 背景生成函数
             GameEntry.Entity.ShowBg(new BgData(GameEntry.Entity.GenerateSerialId(), 1, 1f, 0));
@@ -41,7 +42,7 @@ namespace Hamood
             GameEntry.Entity.ShowBird(new BirdData(GameEntry.Entity.GenerateSerialId(), 3, 5f));
             //设置初始管道产生时间
             m_PipeSpawnTime = Random.Range(3f, 5f);
-            //订阅事件
+            //订阅返回菜单事件
             GameEntry.Event.Subscribe(ReturnMenuEventArgs.EventId, OnReturnMenu);
         }
  
@@ -63,16 +64,18 @@ namespace Hamood
             if (m_IsReturnMenu)
             {
                 m_IsReturnMenu = false;
+                // 读取菜单场景ID
                 procedureOwner.SetData<VarInt>(Constant.ProcedureData.NextSceneId, GameEntry.Config.GetInt("Scene.Menu"));
+                // 先要切换到切换场景流程
                 ChangeState<ProcedureChangeScene>(procedureOwner);
             }
         }
         protected override void OnLeave(ProcedureOwner procedureOwner, bool isShutdown)
         {
             base.OnLeave(procedureOwner, isShutdown);
- 
+            // 关闭显示分数UI
             GameEntry.UI.CloseUIForm(m_ScoreFormId);
-            //取消订阅事件
+            //取消订阅返回菜单事件
             GameEntry.Event.Unsubscribe(ReturnMenuEventArgs.EventId, OnReturnMenu);
         }
         private void OnReturnMenu(object sender, GameEventArgs e)
